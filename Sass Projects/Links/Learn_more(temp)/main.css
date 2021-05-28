@@ -1,0 +1,280 @@
+@import url(../../Assets/CSS/main.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    height: 100vh;
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+#search {
+    font-family: 'Inter', sans-serif;
+}
+
+/* 
+#round {
+    position: absolute;
+    left: 65%;
+}
+#big_round {
+    height: 3em;
+} */
+
+#small_round {
+    background-color: #259EE2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 0% ;
+    border-bottom-left-radius: 50%;
+}
+
+.nav_text {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: x-large
+}
+
+#Flex a:nth-child(3) {
+    color: #436CFF;
+    font-weight: bold;
+} 
+
+#Flex  a:nth-child(3)::after {
+    content: "";
+    transform: scaleX(1);
+    width: 50%;
+    position: relative;
+    top: 0; right: 0; bottom: 0; left: 25%;
+    display: block;
+    border-bottom: 2px solid #436CFF;
+}
+
+#Flex a:nth-child(1) {
+    color: #000000;
+    font-weight: normal;
+} 
+
+#Flex  a:nth-child(1)::after {
+    content: "";
+    transform: scaleX(0);
+    width: 50%;
+    position: relative;
+    top: 0; right: 0; bottom: 0; left: 25%;
+    display: block;
+    border-bottom: 2px solid #436CFF;
+    transition: 1.7s ease-in-out;;
+}
+
+#Flex a:nth-child(1):hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+/* #ea {
+    border-radius: 10px;
+    height: 30px;
+} */
+#box_container {
+    align-self: center;
+    margin-top: 0em;
+    justify-content: center;
+    align-items: center;
+    background-color: #00F1C6;
+    text-align: center;
+    width: 550px;
+    height: 350px;
+    border-radius: 21px;
+}
+
+#card_in {
+    position: relative;
+    font-size: xx-large;
+    top: 5%;
+    font-weight: 600;
+}
+
+.cards {
+    background-color: black;
+    border-radius: 21px;
+    display: grid;
+    color: rgb(255, 255, 255);
+}
+
+#card_one {
+    position: relative;
+    left: 2%;
+    width: 150px;
+    height: 250px;
+    top: 12%;
+}
+
+#card_two {
+    position: relative;
+    left: 36%;
+    width: 150px;
+    height: 250px;
+    bottom: 59%;
+}
+
+#card_three {
+    position: relative;
+    left: 71%;
+    width: 150px;
+    height: 250px;
+    bottom: 130%;
+}
+
+#money {
+    margin-left: 18%;
+}
+
+#globe {
+    margin-top: 5%;
+    margin-left: 22%;
+}
+
+#audio {
+    margin-left: 28%;
+}
+
+#first_container {
+    min-height: 80vh;
+    position: relative;
+    top: 10%;
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    justify-content: space-around;
+}
+
+#logan {
+    margin-bottom: 2em;
+    font-size: 3.5em;
+    font-weight: bolder;
+    align-self: center;
+    justify-content: center;
+}
+
+#music {
+    color: #00F1C6;
+}
+
+.inside_box {
+    font-size: x-large;
+    position: relative;
+    top: 20%;
+}
+
+#wave {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+
+#black_wave {
+    background-color: #282828;
+    margin-top: -6vh;
+    height: 50em;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+
+#aud_intro {
+    color: #ffff;
+    z-index: 5;
+    position: relative;
+    top: 40%;
+    left: 0%;
+    font-size: 3em;
+    text-align: center;
+    /* transform: translate(-50%, -30%); */
+}
+
+#time_line {
+    background-color: white;
+    height: 22px;
+    width: 70%;
+    border-radius: 32px;
+    position: relative;
+    top: 50%;
+    left: 15%;
+}
+
+#before {
+    
+    position: relative;
+    right: 15%;
+    color: white;
+    top: 100%;
+    font-size: x-large;
+
+}
+
+
+
+#after {
+    position: relative;
+    left: 100%;
+    color: white;
+    top: 100%;
+    font-size: x-large;
+}
+
+#under_line {
+    background-color: #006B45;
+    height: 22px;
+    /* width: 30%; */
+    border-radius: 32px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    animation: aud_play 2s forwards ease-in-out;
+
+}
+
+#over_circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #00F1C6;
+    float: right;
+    position: relative;
+    opacity: 0;
+    bottom: 50%;
+    animation: circle_ani 3s 1s ease-in-out  forwards;
+}
+@keyframes circle_ani {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes aud_play {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+#play {
+    position: relative;
+    top: 60%;
+    left: 46%;
+}
+#play_button {
+    cursor: pointer;
+}
+
+#content::before{
+    content: "00.";
+}
+
+#End {
+    font-family: 'poppins', sans-serif;
+}

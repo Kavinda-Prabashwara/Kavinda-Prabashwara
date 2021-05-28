@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+#box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#logo {
+  position: relative;
+  top: 45%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#log_container {
+  background-color: #436CFF;
+  width: 8em;
+  height: 6.5em;
+  border-radius: 1% 100% 100% 31% / 95% 0% 100% 7%;
+}
+
+#Flex {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Flex a:nth-child(1)::after {
+  content: "";
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  width: 50%;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 25%;
+  display: block;
+  border-bottom: 2px solid #436CFF;
+}
+
+#Flex a:nth-child(1) {
+  color: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+#Flex a:nth-child(2), #Flex a:nth-child(3) {
+  font-weight: normal;
+  color: black;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+#Flex a:nth-child(2)::after, #Flex a:nth-child(3)::after {
+  content: "";
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 50%;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 25%;
+  display: block;
+  border-bottom: 2px solid #436CFF;
+  -webkit-transition: 1.7s ease-in-out;
+  transition: 1.7s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#Flex a:nth-child(2):hover::after, #Flex a:nth-child(3):hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.nav_text {
+  text-decoration: none;
+  color: #436CFF;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+#upper_right_nav {
+  width: 26%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#upper_right_nav #search {
+  background-color: rgba(0, 0, 0, 0.07);
+  -webkit-backdrop-filter: blur(8.6795px);
+          backdrop-filter: blur(8.6795px);
+  border-radius: 201.798px;
+  border: none;
+  height: 2.5em;
+  width: 100%;
+  outline: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: medium;
+}
+
+#upper_right_nav #search_bar {
+  width: 100%;
+  padding-right: 5%;
+}
+
+#upper_right_nav #user_icon {
+  margin-right: 10%;
+}
+
+#upper_right_nav #user_icon:hover {
+  cursor: pointer;
+}
+
+#between_space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#plead {
+  -webkit-animation: plead 0.5s forwards ease-in;
+          animation: plead 0.5s forwards ease-in;
+}
+
+#sea {
+  opacity: 0.5;
+  -webkit-animation: pleads 0.2s forwards ease-in;
+          animation: pleads 0.2s forwards ease-in;
+}
+
+@-webkit-keyframes plead {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes plead {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pleads {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pleads {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,285 @@
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; 
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    position: relative;
+    top: 0%;
+}
+
+#round {
+    position: absolute;
+    left: 65%;
+}
+#big_round {
+    height: 3em;
+}
+
+#small_round {
+    background-color: #259EE2;
+    position: absolute;
+    bottom: 85%;
+    left: 0%;
+    width: 100px;
+    height: 100px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 0% ;
+    border-bottom-left-radius: 50%;
+}
+
+#logo {
+    position: relative;
+    left: 20%;
+    top: 25%;
+}
+/* #sea {
+    border-radius: 10px;
+    height: 30px;
+} */
+#benefits {
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    position: relative;
+    left: 20%;
+}
+
+#benefits:hover::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #063AF0;
+    width: 100%;
+    top: 90%;
+    left: 0%;
+    animation: the_line 2s forwards alternate;
+}
+
+@keyframes the_line {
+    0% {
+        border-bottom: 2px solid #063AF0;
+        width: 0%;
+    }
+    100% {
+        border-bottom: 2px solid #063AF0;
+        width: 100%;
+    }
+}
+
+#home {
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    position: relative;
+    left: 13%;
+}
+
+#home::after {
+    content: "";
+    border-bottom: 2px solid #063AF0;
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    right: 0%;
+}
+
+#account {
+    border: none;
+    background-color: #00F1C6;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    position: relative;
+    top: 50%;
+    left: 90%;
+    font-size: large;
+    border-radius: 20px;
+}
+
+#box_container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    background-color: #00F1C6;
+    text-align: center;
+    width: 550px;
+    height: 350px;
+    border-radius: 21px;
+}
+
+#card_in {
+    position: relative;
+    font-size: xx-large;
+    top: 5%;
+}
+
+.cards {
+    background-color: black;
+    border-radius: 21px;
+    display: grid;
+    color: rgb(255, 255, 255);
+}
+
+#card_one {
+    position: relative;
+    left: 2%;
+    width: 150px;
+    height: 250px;
+    top: 12%;
+}
+
+#card_two {
+    position: relative;
+    left: 36%;
+    width: 150px;
+    height: 250px;
+    bottom: 59%;
+}
+
+#card_three {
+    position: relative;
+    left: 71%;
+    width: 150px;
+    height: 250px;
+    bottom: 130%;
+}
+
+#money {
+    margin-left: 18%;
+}
+
+#globe {
+    margin-top: 5%;
+    margin-left: 22%;
+}
+
+#audio {
+    margin-left: 28%;
+}
+
+#logan {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 3.5em;
+}
+
+#music {
+    color: #00F1C6;
+}
+
+.inside_box {
+    font-size: x-large;
+    position: relative;
+    top: 20%;
+}
+
+#wave {
+    z-index: 10;
+    position: relative;
+    top: 43%;
+}
+
+#black_wave {
+    background-color: #282828;
+    height: 50em;
+}
+
+#aud_intro {
+    color: #ffff;
+    z-index: 5;
+    position: relative;
+    top: 40%;
+    left: 0%;
+    font-size: 3em;
+    text-align: center;
+    /* transform: translate(-50%, -30%); */
+}
+
+#time_line {
+    background-color: white;
+    height: 22px;
+    width: 70%;
+    border-radius: 32px;
+    position: relative;
+    top: 50%;
+    left: 15%;
+}
+
+#before {
+    
+    position: relative;
+    right: 15%;
+    color: white;
+    top: 100%;
+    font-size: x-large;
+
+}
+
+
+
+#after {
+    position: relative;
+    left: 100%;
+    color: white;
+    top: 100%;
+    font-size: x-large;
+}
+
+#under_line {
+    background-color: #006B45;
+    height: 22px;
+    /* width: 30%; */
+    border-radius: 32px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    animation: aud_play 2s forwards ease-in-out;
+
+}
+
+#over_circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #00F1C6;
+    float: right;
+    position: relative;
+    opacity: 0;
+    bottom: 50%;
+    animation: circle_ani 3s 1s ease-in-out  forwards;
+}
+@keyframes circle_ani {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes aud_play {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+#play {
+    position: relative;
+    top: 60%;
+    left: 46%;
+}
+#play_button {
+    cursor: pointer;
+}
+
+#content::before{
+    content: "00.";
+}
