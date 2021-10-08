@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @Kavinda-Prabashwara
-- 👀 I’m interested in Web development and web designing
-- 🌱 I’m currently learning C and Js
+- 👋 Hi, I’m @Kavinda
+- 👀 I’m interested in Web development and Application programming
+- 🌱 I’m currently learning Java and OpenGl
 - 💞️ I’m looking to collaborate on any project
 - 📫 How to reach me - im on discord and my username is Daytime#2441
 
