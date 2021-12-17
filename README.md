@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @Kavinda
 - 👀 I’m interested in Web development and Application programming
-- 🌱 I’m currently learning Java and OpenGl
+- 🌱 I’m currently learning C++ and OpenGl
 - 💞️ I’m looking to collaborate on any project
-- 📫 How to reach me - im on discord and my username is Daytime#2441
+- 📫 How to reach me - I'm on discord and my username is Daytime#2441
 
 <!---
 Kavinda-Prabashwara/Kavinda-Prabashwara is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
